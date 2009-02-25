@@ -2,7 +2,7 @@
   "http://www.w3.org/TR/html4/loose.dtd">
 <html>
   <head>
-    
+    <title>burrpTV: Unofficial API</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" title="style.css" charset="utf-8">
     
     <script src="../lib/prototype.js" type="text/javascript" charset="utf-8"></script>
@@ -12,6 +12,44 @@
   </head>
   
   <body>
+    
+    <img src="img/burrp-tv-logo.gif" alt="Burrp TV" id="logo" />
+    <h1>Burrp TV: Unofficial API</h1>
+    
+    <div id="controller">
+      <p>Channel:
+      <select name="channel_name" id="channel_name">
+        <option value="59">Star Movies</option>
+        <option value="8">HBO</option>
+        <option value="46">Discovery Channel</option>
+        <option value="1">AXN</option>
+        <option value="51">Set Max</option>
+        <option value="23">Star World</option>
+        <option value="4">Zee Cinema</option>
+      </select>
+      
+      &nbsp;from now till the next &nbsp;
+      
+      <select name="till_hours" id="till_hours">
+        <option value="1">1 hour</option>
+        <option value="2">2 hours</option>
+        <option value="3">3 hours</option>
+        <option value="4">4 hours</option>
+        <option value="5">5 hours</option>
+        <option value="6">6 hours</option>
+        <option value="7">7 hours</option>
+      </select>
+      
+      &nbsp;
+      
+      <input type="button" name="submit" value="Submit" id="submit">
+      
+      </p>
+    </div>
+    
+    <div id="show-canvas">
+    </div>
+    
   </body>
   
 </html>

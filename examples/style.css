@@ -1,0 +1,42 @@
+body{
+	font: normal 13px Helvetica, Verdana, Arial, sans-serif;
+	letter-spacing: 1px;
+}
+img#logo{
+	float: left;
+}
+div#controller{
+	width: 700px;
+	border: 2px solid #286CAF;
+	background: #A8E7FF;
+	padding: 10px;
+}
+div#show-canvas{
+	width: 700px;
+	border: 2px solid #605B5F;
+	background: #FBF9F9;
+	margin-top: 10px;
+}
+h1{
+	font: bold 32px 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;
+	color: #BBCE53;
+	letter-spacing: -2px;
+	margin-left: 200px;
+}
+h2{
+	padding: 10px;
+	background: #F2B354;
+	color: white;
+	margin: 0;
+}
+a{
+	color: #BBCE53;
+	font: 14px 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;
+	padding: 2px;
+	text-decoration: none;
+}
+a:hover{
+	background-color: #BBCE53;
+	color: #fff;
+	font: 14px 'Helvetica Neue', Helvetica, Verdana, Arial, sans-serif;	
+}

@@ -11,7 +11,16 @@ var BurrpTV = Class.create({
 		var scriptElement = new Element('script',{src:json, type:"text/javascript",charset:"utf-b"});
 		$(document.body).insert(scriptElement)
 	},
-	currentTime: function(attribute){
+	currentTime: function(){
 		return new Date().getTime(); //tv.burrp.com uses the epoch Unix time.
 	},
+	getEndTime: function(hours){
+		hours = parseInt(hours, 10);
+		var currentTime = new Date();
+		currentTime.setHours(currentTime.getHours()+hours);
+		return currentTime.getTime();
+	},
+	getURLForEpisode: function(episode){
+		return "http:\/\/tv.burrp.com\/show\/"+episode.seoFriendlyShowName+"\/"+episode.seriesId+"\/"+episode.episodeId+"\/"+episode.startTimeStamp;
+	}
 });

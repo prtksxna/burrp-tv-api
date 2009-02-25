@@ -1,0 +1,65 @@
+h1. Introduction
+
+This is an unofficial API for "burrp!TV":http://tv.burrp.com . It has been derived by studying the current code on the site and work be using JSON intercepts. This API has no affiliation whatsoever with "burrp.com":http;//burrp.com and has been developed independently by me.
+
+h2. Installation/Usage
+
+To start using you will need to include the following file - 
+
+<code><pre>
+  <script src="lib/prototype.js" type="text/javascript" charset="utf-8"></script>
+  <script src="src/burrp-tv-api.js" type="text/javascript" charset="utf-8"></script>
+</pre></code>
+
+h2. The BurrpTV Object
+
+This is the object that you'll be using to get any data from Burrp!TV. It has the following methods - 
+
+|_.Method|_.Parameters|_.Descrition|
+|getSchedule|startTime, endTime, channelId, callback|Loads the requires JSON file and invokes the callback function|
+|getEpisode|episodeId, startTime, callback|Loads the JSON of that episode and invokes the callback function|
+|currentTime|(none)|It returns the current time in the Epoch Unix time|
+|getEndTime|hours|Returns the time after the specified number of time. The value is Epoch Unix Time|
+|getURLForEpisode|episode(Hash Object)|It returns a corresponding URL for the episode on tv.burrp.com|
+
+
+h2. Distribution
+
+All the files related to burrp-tv-api are in the @src@ folder. The files that its dependent on is in the @lib@ folder.
+
+To get started and see the basic usage see the @example@ folder. It has examples and usage of the different options provided by burrp-tv-api.
+
+
+h2. License
+
+Burrp!TV Api(Unofficial), "burrp-tv-api" is licensed under the terms of the MIT license.
+
+<pre style="background: #EBF1F4;border: 1px solid #DDD;">
+  Copyright (c) 2009 Prateek Saxena
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation
+  files (burrp-tv-api), to deal in burrp-tv-api without
+  restriction, including without limitation the rights to use,
+  copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of it, and to permit persons to whom it
+  is furnished to do so, subject to the following
+  conditions:
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+  OTHER DEALINGS IN THE SOFTWARE.
+</pre>
+
+
+h2. Dependencies
+
+# "Prototype":http://github.com/sstephenson/prototype/tree/master
